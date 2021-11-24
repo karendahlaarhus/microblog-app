@@ -1,0 +1,9 @@
+{% extends 'base.html' %} {% block content %}
+<section>
+  <h2>User profile</h2>
+  <span class="author">{{ user.name }}</span>
+  <span class="date">{{ user.email }}</span>
+  <a href="#">Follow</a>
+  {% include 'posts_template.html' %}
+</section>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'base.html' %} {% block content %}
+<section class="message_template">
+  <h2>Message</h2>
+  <span class="author">{{ user.name }}</span>
+  <span class="message_text">{{ message.text }}</span>
+
+  {% include 'responses_template.html' %}
+</section>
+{% endblock %}
